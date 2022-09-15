@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">calculadora de numeros Primos</h1>
+        <h3>Ingresa un numero para verificar si es primo</h3>
+    </div>
+    <form class="container" id="unico">
+        <div>
+            <label for="numero" class="form-label">Ingrese Un Numero</label>
+            <input class="form-control" type="text" name="numero" id="numero">
+        </div>
+        <div class="my-3 d-flex justify-content-around">
+            <button class="btn btn-primary" type="submit" id="btnRango">Verificar</button>
+        </div>
+        <div class="my-3" id="respuesta">
+
+        </div>
+    </form>
+
+    <div class="container">
+        <h3>Ingresa una serie de numeros</h3>
+        <p class="text-danger">Nota: los numeros deben ir separados por comas, ejemplo: 1,2,3,4</p>
+    </div>
+    <form class="container" id="serie">
+        <div>
+            <label for="numeros" class="form-label">Ingrese una serie de numeros</label>
+            <input class="form-control" type="text" name="numeros" id="numeros">
+        </div>
+        <div class="my-3 d-flex justify-content-around">
+            <button class="btn btn-primary" type="submit" id="btnSerie">Verificar</button>
+        </div>
+        <div class="my-3" id="mensaje">
+
+        </div>
+    </form>
+
+    <div class="container">
+        <h3>Ingresa un rango que quieras calcular!</h3>
+    </div>
+    <form class="container" id="rango">
+        <div>
+            <label for="inicio" class="form-label">Numero Inicio</label>
+            <input class="form-control" type="text" name="inicio" id="inicio">
+        </div>
+        <div>
+            <label for="" class="form-label">Numero Final</label>
+            <input class="form-control" type="text" id="fin" name="fin">
+        </div>
+        <div class="my-3 d-flex justify-content-around">
+            <button class="btn btn-primary" type="submit" id="btnRango">Ver Rango de Numeros</button>
+            <button class="btn btn-primary" type="button" id="borrar">Borrar Tabla</button>
+        </div>
+    </form>
+
+    <div class="table-responsive mx-3">
+        <table class="table table-bordered table-dark table-hover text-center" id="tabla">
+            <thead>
+                <tr>
+                    <th>col</th>
+                    <th>col</th>
+                    <th>col</th>
+                    <th>col</th>
+                    <th>col</th>
+                    <th>col</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
